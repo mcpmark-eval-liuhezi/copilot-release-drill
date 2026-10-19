@@ -1,0 +1,11 @@
+name: Release drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill-sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate a long-running release job
+        run: sleep 300
